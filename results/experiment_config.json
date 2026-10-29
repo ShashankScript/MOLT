@@ -1,0 +1,256 @@
+{
+  "source": "creditcard.csv (ULB/Worldline via Kaggle)",
+  "input_rows": 284807,
+  "input_frauds": 492,
+  "initial_fraction": 0.2,
+  "calibration_fraction": 0.05,
+  "stream_fraction": 0.75,
+  "legitimate_keep_fraction": 0.25,
+  "sampling_applied_to": [
+    "initial",
+    "calibration",
+    "stream"
+  ],
+  "window_size": 4000,
+  "n_seeds": 5,
+  "seeds": [
+    17,
+    42,
+    101,
+    2026,
+    31415
+  ],
+  "scenario_count": 5,
+  "strategy_count": 5,
+  "simulated_runs": 125,
+  "sample_rows": 5492,
+  "max_fpr": 0.01,
+  "review_fee": 5.0,
+  "drift_threshold_calibration": "strategy-matched leave-one-seed-out no-drift runs",
+  "drift_thresholds_by_seed_and_strategy": {
+    "17": {
+      "static": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5438667467138524,
+        "score_ks_stat_threshold": 0.2580454121274091,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "periodic": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.14561995515427817,
+        "feature_ks_stat_threshold": 0.5438667467138524,
+        "score_ks_stat_threshold": 0.12659516037572927,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "drift_triggered": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5438667467138524,
+        "score_ks_stat_threshold": 0.2580454121274091,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "online": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 1.414876304918751,
+        "feature_ks_stat_threshold": 0.5438667467138524,
+        "score_ks_stat_threshold": 0.5093670817281233,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "oracle": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.14792391010854178,
+        "feature_ks_stat_threshold": 0.5438667467138524,
+        "score_ks_stat_threshold": 0.1416004180495742,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      }
+    },
+    "42": {
+      "static": {
+        "feature_psi_top3_threshold": 1.4160036697213265,
+        "score_psi_threshold": 0.3263614911114045,
+        "feature_ks_stat_threshold": 0.5419196752694271,
+        "score_ks_stat_threshold": 0.2535105593685527,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "periodic": {
+        "feature_psi_top3_threshold": 1.4160036697213265,
+        "score_psi_threshold": 0.13223511920666947,
+        "feature_ks_stat_threshold": 0.5419196752694271,
+        "score_ks_stat_threshold": 0.12557638960595238,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "drift_triggered": {
+        "feature_psi_top3_threshold": 1.4160036697213265,
+        "score_psi_threshold": 0.3263614911114045,
+        "feature_ks_stat_threshold": 0.5419196752694271,
+        "score_ks_stat_threshold": 0.2535105593685527,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "online": {
+        "feature_psi_top3_threshold": 1.4160036697213265,
+        "score_psi_threshold": 1.414876304918751,
+        "feature_ks_stat_threshold": 0.5419196752694271,
+        "score_ks_stat_threshold": 0.5093670817281233,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "oracle": {
+        "feature_psi_top3_threshold": 1.4160036697213265,
+        "score_psi_threshold": 0.1458502655503521,
+        "feature_ks_stat_threshold": 0.5419196752694271,
+        "score_ks_stat_threshold": 0.13611963432693228,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      }
+    },
+    "101": {
+      "static": {
+        "feature_psi_top3_threshold": 1.4233870105159159,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5436901162790698,
+        "score_ks_stat_threshold": 0.2580454121274091,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "periodic": {
+        "feature_psi_top3_threshold": 1.4233870105159159,
+        "score_psi_threshold": 0.15257346498136534,
+        "feature_ks_stat_threshold": 0.5436901162790698,
+        "score_ks_stat_threshold": 0.12659516037572927,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "drift_triggered": {
+        "feature_psi_top3_threshold": 1.4233870105159159,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5436901162790698,
+        "score_ks_stat_threshold": 0.2580454121274091,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "online": {
+        "feature_psi_top3_threshold": 1.4233870105159159,
+        "score_psi_threshold": 1.4162641071270583,
+        "feature_ks_stat_threshold": 0.5436901162790698,
+        "score_ks_stat_threshold": 0.5102457294353683,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "oracle": {
+        "feature_psi_top3_threshold": 1.4233870105159159,
+        "score_psi_threshold": 0.1458502655503521,
+        "feature_ks_stat_threshold": 0.5436901162790698,
+        "score_ks_stat_threshold": 0.13611963432693228,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      }
+    },
+    "2026": {
+      "static": {
+        "feature_psi_top3_threshold": 1.4138075595994652,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.2580454121274091,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "periodic": {
+        "feature_psi_top3_threshold": 1.4138075595994652,
+        "score_psi_threshold": 0.14557351633317406,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.12050876933160727,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "drift_triggered": {
+        "feature_psi_top3_threshold": 1.4138075595994652,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.2580454121274091,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "online": {
+        "feature_psi_top3_threshold": 1.4138075595994652,
+        "score_psi_threshold": 1.4026118403428973,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.5093670817281233,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "oracle": {
+        "feature_psi_top3_threshold": 1.4138075595994652,
+        "score_psi_threshold": 0.1472390755860645,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.1415900007857928,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      }
+    },
+    "31415": {
+      "static": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.2562506306291788,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "periodic": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.15257346498136534,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.12504735369981296,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "drift_triggered": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.344598453461575,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.2562506306291788,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "online": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 1.4601531402770953,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.5191520569620254,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      },
+      "oracle": {
+        "feature_psi_top3_threshold": 1.4260690041005673,
+        "score_psi_threshold": 0.13930564544648077,
+        "feature_ks_stat_threshold": 0.5453710748792271,
+        "score_ks_stat_threshold": 0.13611963432693228,
+        "null_quantile": 0.95,
+        "consecutive_windows": 2
+      }
+    }
+  },
+  "detector_consecutive_windows": 2,
+  "adwin_delta": 0.002,
+  "controller_signal": "fraud-miss ADWIN only; PSI and KS are diagnostic",
+  "ks_alarm_statistic": "two-sample KS D statistic; p-values are descriptive only",
+  "score_reference": "fixed calibration cohort rescored under each active model; stream windows never refresh reference",
+  "feature_psi_summary": "mean of top three feature PSI values, empirically calibrated by strategy",
+  "row_error_adwin_baseline": "static strategy only; NA elsewhere, not zero alarms",
+  "window_tail_policy": "merge final remainder into prior window if below half the target size; row-count only",
+  "initial_train_cap_rows": 12000,
+  "oracle_definition": "zero-delay retraining reference; not a guaranteed upper bound",
+  "drift_start_policy": "seed-specific start sampled from the middle portion of the stream",
+  "uncertainty": "five-seed descriptive t intervals and paired seed-clustered moving-block bootstrap differences; five seed clusters, exploratory and unadjusted, neither is population-level certainty",
+  "paired_comparison_adjustment": "none; exploratory intervals, no multiple-comparison correction",
+  "limitation": "semi-synthetic drift; sampled stream has elevated fraud prevalence; amount costs use dataset units, not realized savings"
+}

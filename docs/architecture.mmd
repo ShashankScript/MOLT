@@ -1,0 +1,13 @@
+flowchart LR
+  CSV["creditcard.csv<br/>local input only"] --> SPLIT["Chronological split<br/>train / calibration / stream<br/>Time excluded from features"]
+  SPLIT --> SAMPLE["Matched seeded sample<br/>all pools: every fraud + 25% legitimate"]
+  SAMPLE --> NULL["No-drift detector calibration<br/>leave-one-seed-out PSI / KS limits"]
+  NULL --> SHIFT["Semi-synthetic shift<br/>harmful abrupt / gradual<br/>benign mixed covariate"]
+  SHIFT --> REPLAY["Windowed replay<br/>labels released after scoring<br/>seed-varied drift start"]
+  REPLAY --> DET["PSI / KS feature + score<br/>ADWIN fraud misses<br/>ADWIN row-error baseline"]
+  REPLAY --> POLICY["Static / Periodic / Triggered<br/>Online / zero-delay reference"]
+  DET --> POLICY
+  POLICY --> METRICS["Applied-threshold recall / FPR / FP count<br/>recall@1% FPR / PR-AUC<br/>amount-unit cost proxy"]
+  METRICS --> RESULTS["Precomputed Parquet<br/>run summaries · detector trade-offs<br/>event log · block bootstrap"]
+  RESULTS --> APP["Streamlit research dashboard"]
+  SAMPLE2["Small licensed sample<br/>+ saved batch model"] --> APP

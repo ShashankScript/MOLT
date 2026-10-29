@@ -1,0 +1,11 @@
+scenario,intensity,delay_windows,strategy,metric,ci_low,ci_high,bootstrap_reps,block_len
+none,0.0,1,static,threshold_recall,0.7706149672089013,0.8427188234076697,1200,2
+none,0.0,1,periodic,threshold_recall,0.6414843032354643,0.8416868231364854,1200,2
+none,0.0,1,drift_triggered,threshold_recall,0.7706149672089013,0.8427188234076697,1200,2
+none,0.0,1,online,threshold_recall,0.6807026427969355,0.8304571904509485,1200,2
+none,0.0,1,oracle,threshold_recall,0.7421107292029239,0.8421636983417964,1200,2
+harmful_abrupt,1.0,1,static,threshold_recall,0.010671766084757263,0.5608748311092744,1200,2
+harmful_abrupt,1.0,1,periodic,threshold_recall,0.5171598364639118,0.7722697017663083,1200,2
+harmful_abrupt,1.0,1,drift_triggered,threshold_recall,0.20363018234907376,0.6737208555594172,1200,2
+harmful_abrupt,1.0,1,online,threshold_recall,0.6447285797494634,0.8006233747608182,1200,2
+harmful_abrupt,1.0,1,oracle,threshold_recall,0.648792510775721,0.8203451311737086,1200,2

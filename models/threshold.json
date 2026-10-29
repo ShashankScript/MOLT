@@ -1,0 +1,12 @@
+{
+  "threshold": 0.8857391023682952,
+  "target_fpr": 0.01,
+  "split": "chronological 60% train / 20% validation / 20% test",
+  "features_excluded": [
+    "Time",
+    "Class"
+  ],
+  "validation_rows": 56963,
+  "test_rows": 56962,
+  "threshold_selected_on": "validation only"
+}

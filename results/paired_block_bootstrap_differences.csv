@@ -1,0 +1,9 @@
+scenario,intensity,delay_windows,strategy,comparator,metric,mean_difference,ci_low,ci_high,bootstrap_reps,block_len,seed_clusters
+harmful_abrupt,1.0,1,drift_triggered,static,recall,0.17610691932924238,0.09197944942484416,0.2667765195725495,2000,2,5
+harmful_abrupt,1.0,1,drift_triggered,static,recall_at_fpr,0.2089861100786691,0.10313767876608167,0.3241791215237675,2000,2,5
+harmful_abrupt,1.0,1,drift_triggered,periodic,recall,-0.21845217428814112,-0.2973477747955318,-0.14442069855359282,2000,2,5
+harmful_abrupt,1.0,1,drift_triggered,periodic,recall_at_fpr,-0.2558477374474235,-0.35264711496662376,-0.1629106365240052,2000,2,5
+harmful_abrupt,1.0,1,drift_triggered,online,recall,-0.2751657317130875,-0.3775774540981138,-0.17773761289720535,2000,2,5
+harmful_abrupt,1.0,1,drift_triggered,online,recall_at_fpr,-0.2900964922285465,-0.40334971373936274,-0.1775339229652905,2000,2,5
+harmful_abrupt,1.0,1,drift_triggered,oracle,recall,-0.30670714268308896,-0.4016037730660127,-0.21468461103800898,2000,2,5
+harmful_abrupt,1.0,1,drift_triggered,oracle,recall_at_fpr,-0.300663178946302,-0.40312182599578655,-0.20002877945389178,2000,2,5
